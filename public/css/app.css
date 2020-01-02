@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.out {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.out.fade-out {
+    opacity: 0;
+}
+
