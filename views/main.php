@@ -1,4 +1,4 @@
-<div class="container">
+    <div class="container">
     <div class="row mt-5">
         <!-- 1줄은 12칸으로 이루어져 있음 -->
         <div class="col-10 offset-1">
@@ -25,6 +25,21 @@
                     </div>
                 </div>
             <?php endforeach;?>
+
+            <div class="row my-3">
+                <div class="col-6 text-left">
+                    <?php if ($prev) : ?>
+                        <a href="/?p=<?= $p - 1 ?>" class="btn btn-info">이전</a>
+                    <?php endif; ?>
+                </div>
+
+                <div class="col-6 text-right">
+                    <?php if ($next) : ?>
+                        <a href="/?p=<?= $p + 1 ?>" class="btn btn-info">다음</a>
+                    <?php endif; ?>
+                </div>
+            </div>
+
         <?php else: ?>
             <div class="jumbotron  jumbotron-fluid">
                 <div class="container">
