@@ -23,12 +23,11 @@
                         <li class="nav-item active">
                             <a href="/" class="nav-link">메인</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="/todo/write" class="nav-link">일정등록</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">일정삭제</a>
-                        </li>
+                        <?php if(isset($_SESSION['user'])) :?>
+                            <li class="nav-item">
+                                <a href="/todo/write" class="nav-link">일정등록</a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                     <div class="ml-auto">
                         <?php if(isset($_SESSION['user'])) : ?>

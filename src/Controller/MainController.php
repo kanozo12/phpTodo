@@ -13,6 +13,7 @@ class MainController extends MasterController
         $cnt = 0;
         $prev = false;
         $next = false;
+
         if(isset($_SESSION['user'])) {
             $user = $_SESSION['user'];
             $page = isset($_GET['p']) && is_numeric($_GET['p']) ? $_GET['p'] : 1;

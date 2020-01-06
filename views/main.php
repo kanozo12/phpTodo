@@ -18,8 +18,8 @@
                                 <p class="card-text"><?= $item->content ?></p>
                             </div>
                             <div class="card-footer text-right">
-                                <a href="/todo/mod?id=<? $item->id ?>" class="btn btn-primary btn-sm">수정</a>
-                                <a href="/todo/del?id=<? $item->id ?>" class="btn btn-danger btn-sm">삭제</a>
+                                <a href="/todo/mod?id=<?= $item->id ?>" class="btn btn-primary btn-sm">수정</a>
+                                <a href="/todo/del?id=<?= $item->id ?>" class="btn btn-danger btn-sm">삭제</a>
                             </div>
                         </div>
                     </div>
